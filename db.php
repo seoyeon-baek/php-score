@@ -10,16 +10,16 @@ if ($mysqli->connect_error) {
   die("서버 연결 실패: " . $conn->connect_error);
 }
 
-// DB 동작 테스트 코드 - 존재하는 데이터베이스 목록 출력
-$result = $mysqli->query("SHOW TABLES;");
-echo ("TABLEs...<br><hr>");
+// // DB 동작 테스트 코드 - 존재하는 데이터베이스 목록 출력
+// $result = $mysqli->query("SHOW TABLES;");
+// echo ("TABLEs...<br><hr>");
 
-foreach ($result as $row){
-  // echo('<hr><pre>');
-    //    print_r($row);
-    // echo('</pre>');
-    echo $row['Tables_in_mirim'] . "<br>";
-}
+// foreach ($result as $row){
+//   // echo('<hr><pre>');
+//     //    print_r($row);
+//     // echo('</pre>');
+//     echo $row['Tables_in_mirim'] . "<br>";
+// }
 
 
 /*
